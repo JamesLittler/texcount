@@ -674,7 +674,7 @@ add_keys_to_hash(\%TeXmacro,3,'\addcontentsline');
 add_keys_to_hash(\%TeXmacro,6,'\DeclareFontShape');
 add_keys_to_hash(\%TeXmacro,['[','text','ignore'],
     '\cite','\nocite','\citep','\citet','\citeauthor','\citeyear','\citeyearpar',
-    '\citealp','\citealt','\Citep','\Citet','\Citealp','\Citealt','\Citeauthor');
+    '\citealp','\citealt','\Citep','\Citet','\Citealp','\Citealt','\Citeauthor', '\label', '\caption', '\myequations');
 add_keys_to_hash(\%TeXmacro,['ignore','text'],'\parbox','\raisebox');
 add_keys_to_hash(\%TeXmacro,['otherword'],'\marginpar','\footnote','\footnotetext');
 add_keys_to_hash(\%TeXmacro,['header'],
@@ -694,7 +694,7 @@ add_keys_to_hash(\%TeXmacro,['xxx','xxx','xxx'],'\newenvironment','\renewenviron
 # is not clear if they will be in inlined or displayed math.
 my %TeXenvir;
 add_keys_to_hash(\%TeXenvir,'ignore',
-    'titlepage','tabbing','tabular','lstlisting','tabular*','thebibliography','lrbox');
+    'titlepage','tabbing','tabular','table','equation','lstlisting','figure','tabular*','thebibliography','lrbox');
 add_keys_to_hash(\%TeXenvir,'text',
     'document','letter','center','flushleft','flushright',
     'abstract','quote','quotation','verse','minipage',
@@ -4013,5 +4013,3 @@ See the documentation for more details.
 Command line options and most %TC commands (prefixed by % rather than %TC:) may be placed in an options file. This is particularly useful for defining your own output templates and macro handling rules.
 
 ::::::::::::::::::::::::::::::::::::::::
-
-
