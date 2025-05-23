@@ -694,7 +694,7 @@ add_keys_to_hash(\%TeXmacro,['xxx','xxx','xxx'],'\newenvironment','\renewenviron
 # is not clear if they will be in inlined or displayed math.
 my %TeXenvir;
 add_keys_to_hash(\%TeXenvir,'ignore',
-    'titlepage','tabbing','tabular','table','equation','lstlisting','figure','tabular*','thebibliography','lrbox');
+    'titlepage','tabbing','tabular','table','label','caption','longtable','longtable*','equation','lstlisting','figure','tabular*','thebibliography','lrbox');
 add_keys_to_hash(\%TeXenvir,'text',
     'document','letter','center','flushleft','flushright',
     'abstract','quote','quotation','verse','minipage',
@@ -4013,3 +4013,5 @@ See the documentation for more details.
 Command line options and most %TC commands (prefixed by % rather than %TC:) may be placed in an options file. This is particularly useful for defining your own output templates and macro handling rules.
 
 ::::::::::::::::::::::::::::::::::::::::
+
+
